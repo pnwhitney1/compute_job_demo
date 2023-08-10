@@ -1,0 +1,4 @@
+org\gridgain\demo\BuyerTotalSpendOperations.class
+org\gridgain\demo\ClusterClient.class
+org\gridgain\demo\BuyerTotalSpendCalculation.class
+org\gridgain\demo\BuyerTotalSpendSchema.class
