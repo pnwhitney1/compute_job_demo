@@ -18,6 +18,12 @@ is calculated and subsequently updated into the BUYER_TOTAL_SPEND
 table. This demonstrates the value of compute jobs by executing soley  
 against local data!  
 
+## Environment
+This project have been built using Maven version 3.8.7  
+This code has been compiled using Java version 11.0.20  
+To build this project simply check out the project, navigate  
+into the project directory and execute "mvn package"  
+
 ## Arguments
 The program supports either no arguments or  
 three defined arguments described as follows:  
@@ -37,8 +43,14 @@ No arguments:
   total spend and to populate this into the BUYER_TOTAL_SPEND table.  
   
 ## Example Invocations
-Example invocations are listed below:  
-  java -cp buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations  
-  java -cp buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -help  
-  java -cp buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -create_schema  
-  java -cp buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -exec_once  
+Example invocations are listed below (windows):  
+  java -cp .\target\buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations  
+  java -cp .\target\buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -help  
+  java -cp .\target\buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -create_schema  
+  java -cp .\target\buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -exec_once  
+
+Example invocations are listed below (linux):  
+  java -cp ./target/buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations  
+  java -cp ./target/buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -help  
+  java -cp ./target/buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -create_schema  
+  java -cp ./target/buyer-total-spend-compute.jar org.gridgain.demo.BuyerTotalSpendOperations -exec_once  
